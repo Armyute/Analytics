@@ -16,3 +16,6 @@ ORDER BY schemaname
 
 -- Grant Privileges on schema
 GRANT USAGE ON schema events TO <usename>
+
+-- Grant Select on table
+GRANT SELECT ON table reports.active_subscriptions_detail_v TO <usename>
