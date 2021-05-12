@@ -1,0 +1,25 @@
+TYPICAL WORKFLOW
+
+-- Creating a Local dev Branch
+git branch dev (create local dev branch)
+git checkout dev (checkout local dev branch)
+
+-- Pushing Changes to Remote
+git diff (view differences in files)
+git status (view status of local dev branch)
+git add -A (stage all files of local dev branch)
+git commit -m "commit notes" (commit all staged files of local dev branch)
+git push -u origin dev (push dev branch to remote repo which creates a local dev branch)
+
+-- Merge dev Branch with Master
+git checkout master (makes master branch the current branch)
+git pull origin master (pulls all remote changes to master onto local master)
+git branch --merged (shows which branches have been merged so far)
+git merge dev (merges local dev to local master)
+git branch --merged (verify that the dev branch was merged with master)
+git push origin --delete dev (deletes dev branch from remote repo)
+
+-- Deleting Local and Remote dev Branch
+git branch -d dev (deletes dev branch from local repo)
+git branch -a (see that the dev branch is still on the remote repo)
+git push origin --delete dev (deletes dev branch from remote repo)
