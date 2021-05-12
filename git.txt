@@ -4,7 +4,7 @@ TYPICAL WORKFLOW
 git branch dev (create local dev branch)
 git checkout dev (checkout local dev branch)
 
--- Pushing Changes to Remote
+-- Pushing dev Changes to Remote
 git diff (view differences in files)
 git status (view status of local dev branch)
 git add -A (stage all files of local dev branch)
